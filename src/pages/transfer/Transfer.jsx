@@ -132,6 +132,7 @@ function Transfer() {
                         <label>
                             Naar rekening
                             <select
+                                data-cy="selecting-account"
                                 required
                                 name="toaccount"
                                 value={receiverAccountId}
@@ -168,6 +169,7 @@ function Transfer() {
                                         <option value="GBP">&#163;</option>
                                     </select>
                                     <input
+                                        data-cy="amount"
                                         style={{ display: 'inline-block' }}
                                         value={amount}
                                         onChange={(e) => setAmount(e.target.value)}
@@ -189,6 +191,7 @@ function Transfer() {
                     <div className="form-row">
                         <label>Omschrijving
                             <textarea
+                                data-cy="description"
                                 required
                                 name="description"
                                 value={description}
@@ -199,7 +202,7 @@ function Transfer() {
 
                     {/* Submit form */}
                     <div className="form-row">
-                        <button type="submit">Overboeken</button>
+                        <button data-cy="submit" type="submit">Overboeken</button>
                     </div>
                 </form>
             </div>

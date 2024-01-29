@@ -17,7 +17,7 @@ function Login() {
             <div className="container">
                 <h2>Kies een account</h2>
                 <div className="login__account-selector">
-                    <button onClick={() => loginAsUser(1)} className="login__account">
+                    <button data-cy="login" onClick={() => loginAsUser(1)} className="login__account">
                         <div>
                             <img src="/images/melvin.png" alt="Melvin avatar" />
                         </div>
